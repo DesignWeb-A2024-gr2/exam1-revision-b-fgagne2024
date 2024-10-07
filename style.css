@@ -1,0 +1,103 @@
+
+:root{
+    --colorPLQ: #f08080;
+    --colorPQ: #004C9D;
+    --colorQS: #FF8040;
+    --colorPCQ: #1db9e0;
+    --colorCAQ: #1e90ff;
+    --colorCQ: #13876c;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+section{
+    width: 700px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-family: "header";
+}
+header h1{
+    font-size: 4em;
+}
+header h2{
+    font-size: 2.5em;
+}
+
+.carte{
+    margin: 0px 50px 0px 50px;
+    padding: 15px 30px 15px 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    
+    
+}
+
+.nom{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#click{
+    display: none;
+}
+.carte:hover #cercle{
+    display: none;
+}
+.carte:hover #click{
+    display: block;
+}
+.carte:hover{
+    
+    transition: 400ms;
+    transform: translateX(20px);
+}
+#PLQ:hover{
+    background-color: var(--colorPLQ);
+}
+#PQ:hover{
+    background-color: var(--colorPQ);
+}
+#QS:hover{
+    background-color: var(--colorQS);
+}
+#PCQ:hover{
+    background-color: var(--colorPCQ);
+}
+#CAQ:hover{
+    background-color: var(--colorCAQ);
+}
+#CQ:hover{
+    background-color: var(--colorCQ);
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+img{
+    height: 24px;
+}
+@font-face {
+    font-family: "header";
+    src: url(assets/font/gilroy-extrabold-webfont.woff2);
+}
